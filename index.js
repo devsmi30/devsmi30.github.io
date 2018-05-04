@@ -1,8 +1,8 @@
 var timer= null;
 function race()
 {
-    document.getElementByID('rider1').style.right = parseInt(document.getElementById('rider1').style.right) + 945 + 'px';
-    document.getElementByID('rider2').style.right = parseInt(document.getElementById('rider2').style.right) + 945 + 'px';
+    document.getElementByID('rider1').style.left = parseInt(document.getElementById('rider1').style.left) + 945 + 'px';
+    document.getElementByID('rider2').style.left = parseInt(document.getElementById('rider2').style.left) + 945 + 'px';
 }
 window.onload = function()
 {
@@ -10,7 +10,7 @@ window.onload = function()
     {
         if(timer == null)
 	{
-	    timer = setInterval("race()", 14);
+	    timer = setInterval("race()", 10);
         }
         else
 	{
