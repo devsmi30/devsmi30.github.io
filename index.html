@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+ <head>
+    
+<meta charset="utf-8">
+  <!--sets viewport and scaling of initial load-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--sets viewport and scaling of initial load--><!--links css style sheet to the index-->
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!--java script "app" id-->
+<div id="app">
+  <!--sword wielding character picture is loaded and style information set-->
+<img src="swordboy.png" alt="Sword Boy" class="SwordHorse" id="sb" :style="swordBoyPosition">
+  <!--mace wielding character picture is loaded and style information set-->      
+<img src="maceboy.png" alt="Mace Boy" class="MaceHorse" id="mb" :style="maceBoyPosition">
+  <!--the army, being the destination is loaded and size set-->      
+<img src="army.png" alt="Army" width="460px" height="460px" class="Army">
+  <!--red sword button initiates the race, sword turns green during the race --> 
+<img src="racesign.png" alt="Sign" width="400px" height="300px" class="Sign">  
+  <!--Sign that instructs viewer what to do -->
+<img v-bind:src="buttonImage" id="start" alt="Sword"  class="RSword GSword img-rounded" v-on:click="startRace">
+  <!--binding the winning character-->      
+<img v-bind:src="winnerHorseman" alt="" class="WinHorseman">
+  <!--binding the playing character-->     
+<img v-bind:src="playingHorseman" alt="" class="PlayHorseman">
+</div>
+    <!--Loads script from following source-->
+<script src="https://unpkg.com/vue@2.5.2/dist/vue.js"></script>
+     
+<script src="script.js"></script> 
+  
+</body>
+
+</html>
+
+	
